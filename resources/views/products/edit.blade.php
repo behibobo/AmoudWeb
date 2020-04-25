@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Edit {{ $product->name }}</h1>
+<h1 class="edit-category" >ویرایش  {{ $product->name }}</h1>
 
 <!-- if there are creation errors, they will show here -->
 {{ HTML::ul($errors->all()) }}
@@ -27,8 +27,9 @@
 		{{ Form::label('category_id', 'category') }}
 		{{ Form::select('category_id', $categories, $product->category_id, array('class' => 'form-control')) }}
 	</div>
-
-	{{ Form::submit('Edit the Product!', array('class' => 'btn btn-primary')) }}
+	<div class="edit-button-product">
+	{{ Form::submit('ویرایش محصول', array('class' => 'btn btn-primary ')) }}
 
 {{ Form::close() }}
+</div>
 @endsection

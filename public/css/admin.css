@@ -51,20 +51,16 @@
     justify-content: center;
     align-content:space-between ;
     margin: 5px;
-    width:80%;
+    width:100%;
 }
 .action-category a{
     display:flex;
     justify-content: center;
     align-content:space-between ;
     margin: 5px;
-    width:80%;
+    width:100%;
+}
 
-}
-.action-category form{
-    display:flex;
-    justify-content: center;
-}
 
 
 .title-category td{
@@ -74,4 +70,84 @@
 .category-detail td{
     text-align: center;
     vertical-align: middle;
+}
+
+.new-category{
+    background-color: #47bd8c;
+    color:white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-category:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #32996e;
+}
+
+.amd-nav{
+display: flex;
+height: 60px;
+border-bottom: 1px solid rgb(230, 230, 230);
+background-color: #f7f7f7 !important;
+color: white !important;
+
+}
+.edit-category{
+    text-align:center;
+    margin-top:10px;
+     padding:20px;
+}
+
+.show-category{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.show-category div{
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.show-category div span{
+    width:50%;
+    padding: 20px;
+    background-color: rgb(241, 241, 241);
+margin-bottom:20px;
+border:1px solid gray
+}
+
+.edit-show-product{
+    margin:20px;
+    border:none !important;
+}
+
+.image-show-product{
+border:none;
+}
+.image-show-product .panel{
+    padding: 10px;
+    margin:10px
+}
+.image-show-product img{
+    border-radius: 10px;
+}
+
+.edit-button-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+.edit-button-product input{
+padding: 15px;
+width:20%
 }

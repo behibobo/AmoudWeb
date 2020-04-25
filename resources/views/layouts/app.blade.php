@@ -25,10 +25,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+        <nav  class="navbar navbar-expand-md navbar-light bg-white shadow-sm amd-nav">
+            <div  class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('صفحه اصلی', 'صفحه اصلی') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -71,10 +71,10 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/categories">Categories</a>
+                                <a class="nav-link" href="/admin/categories">دسته بندی ها</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/products">Products</a>
+                                <a class="nav-link" href="/admin/products">محصولات</a>
                             </li>
                         @endguest
                     </ul>

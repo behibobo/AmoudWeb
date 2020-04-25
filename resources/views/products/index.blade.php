@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 >محصولات </h1>
+<h1 style="text-align:center; padding-bottom:20px;"></h1>
 
-
-<a href="/admin/products/create">محصول جدید</a>
-<br><br>
+<div style="text-align:right; margin:20px;">
+<a class="new-category" href="/admin/products/create">محصول جدید</a>
+</div>
 <!-- will be used to show any messages -->
 @if (Session::has('message'))
 	<div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-<table class="table table-striped table-bordered">
+<table style="direction:rtl" class="table table-striped table-bordered">
 	<thead>
 		<tr class='title-products'>
 			<td>ID</td>
