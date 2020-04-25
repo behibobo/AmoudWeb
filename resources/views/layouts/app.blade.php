@@ -16,10 +16,12 @@
 
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ url('/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
     @yield('head')
+    <script src="{{asset('js/bootstrap.min.js')}}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="app">

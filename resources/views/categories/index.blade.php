@@ -13,7 +13,7 @@
 
 <table class="table table-striped table-bordered">
 	<thead>
-		<tr>
+		<tr class='title-category'>
 			<td>ID</td>
 			<td>Name</td>
 			<td>Slug</td>
@@ -23,14 +23,14 @@
 	</thead>
 	<tbody>
 	@foreach($categories as $key => $value)
-		<tr>
+		<tr class='category-detail'>
 			<td>{{ $value->id }}</td>
 			<td>{{ $value->name }}</td>
 			<td>{{ $value->slug }}</td>
 			<td>{{ $value->parent->name ?? "" }}</td>
 
 			<!-- we will also add show, edit, and delete buttons -->
-			<td>
+			<td class="action-category">
 
 				<!-- delete the Category (uses the destroy method DESTROY /categories/{id} -->
 				<!-- we will add this later since its a little more complicated than the first two buttons -->

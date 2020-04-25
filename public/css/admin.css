@@ -7,3 +7,71 @@
 .image_box img {
     width: 100%;
 }
+
+.action-product{
+    display:flex;
+    flex-direction: column;
+   
+}
+
+.action-product input{
+    display:flex;
+    justify-content: center;
+    align-content:space-between ;
+    margin: 5px;
+    width:100%;
+}
+.action-product a{
+    display:flex;
+    justify-content: center;
+    align-content:space-between ;
+    margin: 5px;
+    width:100%;
+
+}
+
+
+.title-products td{
+  text-align: center;
+}
+
+.products-detail td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.action-category{ 
+    display:flex;
+    flex-direction: column;
+   
+}
+
+.action-category input{
+    display:flex;
+    justify-content: center;
+    align-content:space-between ;
+    margin: 5px;
+    width:80%;
+}
+.action-category a{
+    display:flex;
+    justify-content: center;
+    align-content:space-between ;
+    margin: 5px;
+    width:80%;
+
+}
+.action-category form{
+    display:flex;
+    justify-content: center;
+}
+
+
+.title-category td{
+  text-align: center;
+}
+
+.category-detail td{
+    text-align: center;
+    vertical-align: middle;
+}
