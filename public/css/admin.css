@@ -1,0 +1,9 @@
+.image_box {
+    width: 200px;
+    height: 300px;
+    border:1px solid #ccc;
+    margin: 5px;
+}
+.image_box img {
+    width: 100%;
+}
