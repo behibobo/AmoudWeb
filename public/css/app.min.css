@@ -39497,3 +39497,11 @@ text-align: right;     }
     font-size: 16px;
     letter-spacing: -1px;
  }
+
+ .product_box .product__desc{
+    text-align: right;
+    direction: rtl;
+    font-size: 12px;
+    letter-spacing: -1px;
+    padding: 2px 12px;
+ }

@@ -161,7 +161,7 @@ class ProductsController extends Controller
     public function uploadImages(Request $request) {
         foreach ($request->file('images') as $image) {
             $postImage = new ProductImage();
-            $name = date('YmdHis') . "." . $image->getClientOriginalExtension();
+            $name = date('YmdHis') . mt_rand(111,999) . "." . $image->getClientOriginalExtension();
             $path = public_path().'/uploads';
             $image->move($path, $name);
             $postImage->product_id = $request->product_id;
@@ -172,15 +172,4 @@ class ProductsController extends Controller
         return redirect()->back();
     }
 
-
-    public function deleteImage(Request $request) {
-        $image = $request->file('filename');
-        $filename =  $request->get('filename').'.jpeg';
-        ImageUpload::where('filename', $filename)->delete();
-        $path = public_path().'/uploads/'.$filename;
-        if (file_exists($path)) {
-            unlink($path);
-        }
-        return $filename;
-    }
 }

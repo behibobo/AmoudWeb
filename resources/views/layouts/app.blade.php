@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
-    @yield('head')
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
     <script src="{{asset('js/bootstrap.min.js')}}" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    @yield('head')
 
 </head>
 <body>

@@ -1,13 +1,36 @@
-.image_box {
-    width: 200px;
-    height: 300px;
-    border:1px solid #ccc;
-    margin: 5px;
-}
-.image_box img {
-    width: 100%;
-}
 
+@font-face {
+    font-family: 'yekan';
+    font-style: normal;
+    font-weight: 300;
+    src: url('yekan.eot?#') format('embedded-opentype'), url(yekan.woff) format('woff'), url(yekan.ttf) format('truetype');
+  }
+  
+  
+  
+  @font-face {
+    font-family: "IRANSans";
+    src: url(Iransans-Light.eot);
+    src: url(Iransans-Light.eot?#iefix) format("embedded-opentype"), url(Iransans-Light.woff) format("woff"), url(Iransans-Light.ttf) format("truetype");
+    font-weight: normal;
+  }
+
+  * {
+      box-shadow: border-box;
+  }
+body {
+    font-family: "yekan", arial;
+}
+.image_container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-evenly;
+
+}
+.image_box {
+    flex: 1;
+}
+.image_box img { width: 100%;}
 .action-product{
     display:flex;
     flex-direction: column;

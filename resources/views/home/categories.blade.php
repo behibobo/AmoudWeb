@@ -84,6 +84,10 @@
                             <div class="product__name">
                                 {{ $product->name }}
                             </div>
+
+                            <div class="product__desc">
+                                {{ $product->desc }}
+                            </div>
                         </div>
                         </div>
                         
