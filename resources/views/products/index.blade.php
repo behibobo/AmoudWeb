@@ -3,6 +3,9 @@
 @section('content')
 <h1>All the products</h1>
 
+
+<a href="/admin/products/create">new</a>
+<br><br>
 <!-- will be used to show any messages -->
 @if (Session::has('message'))
 	<div class="alert alert-info">{{ Session::get('message') }}</div>

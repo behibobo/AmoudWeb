@@ -68,6 +68,12 @@
                                     </form>
                                 </div>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/categories">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/products">Products</a>
+                            </li>
                         @endguest
                     </ul>
                 </div>
