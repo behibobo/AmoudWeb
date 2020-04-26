@@ -72,13 +72,13 @@
                     <div class="row">
                     @foreach($products as $product)
                     <?php
-                        $images = App\ProductImage::where('product_id', $product->id)->get();
+                        $images = App\Upload::where('product_id', $product->id)->where('type', 'product')->get();
                     ?>
                         <div class="col-md-4">
                             <div class="product_box">
 
                             <div class="product__image">
-                                <img src="{{ asset('uploads/'.$images[0]->filename)}}" alt="">
+                                <img src="{{ asset('uploads/products/'.$images[0]->filename)}}" alt="">
                             </div>
 
                             <div class="product__name">
