@@ -80,6 +80,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/admin/products">محصولات</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/projects">پروژه ها</a>
+                            </li>
                         @endguest
                     </ul>
                 </div>

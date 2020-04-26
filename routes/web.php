@@ -28,7 +28,8 @@ Route::group(['prefix' => 'admin'], function () {
     Route::middleware('auth')->group( function () {
         Route::resource('categories', 'CategoriesController');
         Route::resource('products', 'ProductsController');
-        Route::post('storeImage', 'ProductsController@uploadImages');
-        Route::post('deleteImage', 'ProductsController@deleteImage');
+        Route::resource('projects', 'ProjectsController');
+        Route::post('projectImage', 'ProjectsController@uploadImages');
+        Route::post('productImage', 'ProductsController@uploadImages');
     });
 });

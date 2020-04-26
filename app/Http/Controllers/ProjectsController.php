@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Product;
+use App\Project;
 use App\Upload;
 use App\Category;
 use Illuminate\Support\Facades\Validator;
 use Session;
 use Redirect;
-class ProductsController extends Controller
+class ProjectsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,10 +18,10 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $projects = Project::all();
 
-		return View('products.index')
-			->with('products', $products);
+		return View('projects.index')
+			->with('projects', $projects);
     }
 
     /**
@@ -31,9 +31,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        $cats = Category::pluck('name', 'id');
-        return View('products.create')
-            ->with('products', $cats);
+        return View('projects.create');
     }
 
     /**
@@ -46,26 +44,23 @@ class ProductsController extends Controller
     {
         $rules = array(
 			'name'       => 'required',
-			'slug'       => 'required',
 		);
 		$validator = Validator::make($request->all(), $rules);
 
 		// process the login
 		if ($validator->fails()) {
-			return Redirect::to('admin/products/create')
+			return Redirect::to('admin/projects/create')
 				->withErrors($validator);
 		} else {
 			// store
-			$product = new Product;
-			$product->name       = $request->get('name');
-			$product->slug      = $request->get('slug');
-			$product->desc      = $request->get('desc');
-			$product->category_id = $request->get('category_id');
-			$product->save();
+			$project = new Project;
+			$project->name       = $request->get('name');
+			$project->desc      = $request->get('desc');
+			$project->save();
 
 			// redirect
-			Session::flash('message', 'Successfully created Product!');
-			return Redirect::to('admin/products');
+			Session::flash('message', 'Successfully created Project!');
+			return Redirect::to('admin/projects');
 		}
     }
 
@@ -78,11 +73,11 @@ class ProductsController extends Controller
     public function show($id)
     {
         
-        $product = Product::findOrFail($id);
-        $images = Upload::where('item_id', $product->id)
-            ->where('type', 'product')->get();
-		return View('products.show')
-            ->with(['product' => $product, 'images' => $images]);
+        $project = Project::findOrFail($id);
+        $images = Upload::where('item_id', $project->id)
+            ->where('type', 'project')->get();
+		return View('projects.show')
+            ->with(['project' => $project, 'images' => $images]);
     }
 
     /**
@@ -93,10 +88,9 @@ class ProductsController extends Controller
      */
     public function edit($id)
     {
-        $cats = Category::pluck('name', 'id');
-        $product = Product::findOrFail($id);
-		return View('products.edit')
-			->with(['product'=> $product, 'categories' => $cats]);
+        $project = Project::findOrFail($id);
+		return View('projects.edit')
+			->with('project', $project);
     }
 
     /**
@@ -109,27 +103,24 @@ class ProductsController extends Controller
     public function update(Request $request, $id)
     {
         $rules = array(
-			'slug'       => 'required',
 			'name'       => 'required',
 		);
 		$validator = Validator::make($request->all(), $rules);
 
 		// process the login
 		if ($validator->fails()) {
-			return Redirect::to('admin/products/' . $id . '/edit')
+			return Redirect::to('admin/projects/' . $id . '/edit')
 				->withErrors($validator);
 		} else {
 			// store
-			$product = Product::findOrFail($id);
-			$product->name       = $request->get('name');
-			$product->slug      = $request->get('slug');
-			$product->desc      = $request->get('desc');
-			$product->category_id = $request->get('category_id');
-			$product->save();
+			$project = Project::findOrFail($id);
+			$project->name       = $request->get('name');
+			$project->desc      = $request->get('desc');
+			$project->save();
 
 			// redirect
-			Session::flash('message', 'Successfully updated Product!');
-			return Redirect::to('admin/products');
+			Session::flash('message', 'Successfully updated Project!');
+			return Redirect::to('admin/projects');
 		}
     }
 
@@ -141,34 +132,34 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        $product = Product::findOrFail($id);
+        $project = Project::findOrFail($id);
 
         $images = Upload::where('item_id', $id)
-            ->where('type', 'product')->get();
+            ->where('type', 'project')->get();
 
         foreach($images as $image) {
-            $path = public_path().'/uploads/products/'.$image->filename;
+            $path = public_path().'/uploads/projects/'.$image->filename;
             if (file_exists($path)) {
                 unlink($path);
             }
         }
         Upload::where('item_id', $id)
-            ->where('type', 'product')->delete();
-		$product->delete();
+            ->where('type', 'project')->delete();
+		$project->delete();
 
 		// redirect
 		Session::flash('message', 'Successfully deleted the cat!');
-		return Redirect::to('products');
+		return Redirect::to('projects');
     }
 
     public function uploadImages(Request $request) {
         foreach ($request->file('images') as $image) {
             $postImage = new Upload();
             $name = date('YmdHis') . mt_rand(111,999) . "." . $image->getClientOriginalExtension();
-            $path = public_path().'/uploads/products/';
+            $path = public_path().'/uploads/projects/';
             $image->move($path, $name);
             $postImage->item_id = $request->item_id;
-            $postImage->type = "product";
+            $postImage->type = "project";
             $postImage->filename = $name;
             $postImage->save();
         }

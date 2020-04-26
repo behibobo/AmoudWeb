@@ -5,13 +5,13 @@
 <div class="row">
   <div class="col-md-4"></div>
   <div class="col-md-4">
-    <form method="post" action="{{url('admin/productImage')}}" enctype="multipart/form-data">
+    <form method="post" action="{{url('admin/projectImage')}}" enctype="multipart/form-data">
       {{csrf_field()}}
 
 
-      <div class="input-group hdtuto control-group lst increment edit-show-product">
+      <div class="input-group hdtuto control-group lst increment edit-show-project">
         <input style="border:none" type="file" name="images[]" class="myfrm form-control" multiple>
-        <input type="hidden" name="item_id" value="{{ $product->id}}">
+        <input type="hidden" name="item_id" value="{{ $project->id}}">
       </div>
 
       <button type="submit" class="btn btn-success" style="margin:20px; width:100%">Submit</button>
@@ -29,7 +29,7 @@
   @foreach($images as $image)
 
   <div class="image_box" >
-        <img  style="border-radius:10px;" src="{{ asset('uploads/products/'.$image->filename)}}" alt="">
+        <img  style="border-radius:10px;" src="{{ asset('uploads/projects/'.$image->filename)}}" alt="">
       
   </div>
 </div>
