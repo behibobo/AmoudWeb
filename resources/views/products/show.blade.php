@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="row">
-  <div class="col-md-3"></div>
+  <div class="col-md-4"></div>
   <div class="col-md-4">
     <form method="post" action="{{url('admin/storeImage')}}" enctype="multipart/form-data">
       {{csrf_field()}}
@@ -20,16 +20,21 @@
     </form>
   </div>
 
-  <div class="col-md-3"></div>
+  <div class="col-md-4"></div>
 </div>
+<div class="row" style="margin-bottom:30px">
+<div class="col-md-2"></div>
+<div class="col-md-8">
 <div class="image_container">
   @foreach($images as $image)
 
-  <div class="image_box">
-        <img src="{{ asset('uploads/'.$image->filename)}}" alt="">
+  <div class="image_box" >
+        <img  style="border-radius:10px;" src="{{ asset('uploads/'.$image->filename)}}" alt="">
       
   </div>
-
+</div>
   @endforeach
+</div>
+<div class="col-md-2"></div>
 </div>
 @endsection
