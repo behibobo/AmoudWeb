@@ -23,12 +23,15 @@ body {
 }
 .image_container {
     display: flex;
-    justify-content: flex-start;
-    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
 
 }
 .image_box {
-    flex: 1;
+    flex: 1 1;
+    max-width: 250px;
+    margin:8px;
 }
 .image_box img { width: 100%;}
 .action-product{

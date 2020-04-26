@@ -72,7 +72,7 @@
                     <div class="row">
                     @foreach($products as $product)
                     <?php
-                        $images = App\Upload::where('product_id', $product->id)->where('type', 'product')->get();
+                        $images = App\Upload::where('item_id', $product->id)->where('type', 'product')->get();
                     ?>
                         <div class="col-md-4">
                             <div class="product_box">

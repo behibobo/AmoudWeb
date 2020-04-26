@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 use App\Category;
 use App\Product;
-use App\ProductImage;
+use App\Project;
+use App\Upload;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -22,7 +23,8 @@ class HomeController extends Controller
     }
     public function projects()
     {
-        return view('home.projects');
+        $projects = Project::all();
+        return view('home.projects')->with('projects', $projects);;
     }
     public function contact()
     {

@@ -69,158 +69,32 @@
             <div class="h-layout__inner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="h-layout__colctrl-item">
-                                <div class="m-text-image " data-t-name="">
-                                    <div class="m-text-image__image--top">
-                                        <a class="m-text-image__link" target="_self" href="#">
-                                            <picture class="a-responsive-image js-a-responsive-image  "
-                                                data-t-name="ResponsiveImage" data-fadeOut="100">
-                                                <div class="a-loader js-a-loader" data-t-name="Loader">
-                                                    <div class="a-loader__wrapper">
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                    </div>
-                                                </div><img class="a-responsive-image__img lazyload" data-sizes="auto"
-                                                    data-src="/img/project/1.jpg"
-                                                    data-srcset="/img/project/1.jpg 1200w, /img/project/1.jpg 992w, /img/project/1.jpg 768w, /img/project/1.jpg 480w, /img/project/1.jpg 240w"
-                                                    src="/img/project/1.jpg" /><noscript><img src="/img/project/1.jpg"
-                                                        class="a-responsive-image__img--fallback" /></noscript>
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <h2 class="m-text-image__title">کابین سنگ مصنوعی کد SM1</h2>
-                                    <div class="m-text-image__text">
-                                        <div class="a-richtext" data-t-name="Richtext">
-                                            <p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                        @foreach($projects as $project)
+                        <?php
+                        $images = App\Upload::where('item_id', $project->id)->where('type', 'project')->get();
+                        ?>
+                        <div class="col-md-4">
+                            <div class="product_box">
+
+                            <div class="product__image">
+                                <img src="{{ asset('uploads/projects/'.$images[0]->filename)}}" alt="">
                             </div>
 
+                            <div class="product__name">
+                                {{ $project->name }}
+                            </div>
+
+                            <div class="product__desc">
+                                {{ $project->desc }}
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="h-layout__colctrl-item">
-                                <div class="m-text-image " data-t-name="">
-                                    <div class="m-text-image__image--top">
-                                        <a class="m-text-image__link" target="_self" href="#">
-                                            <picture class="a-responsive-image js-a-responsive-image  "
-                                                data-t-name="ResponsiveImage" data-fadeOut="100">
-                                                <div class="a-loader js-a-loader" data-t-name="Loader">
-                                                    <div class="a-loader__wrapper">
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                    </div>
-                                                </div><img class="a-responsive-image__img lazyload" data-sizes="auto"
-                                                    data-src="/img/project/2.jpg"
-                                                    data-srcset="/img/project/2.jpg 1200w, /img/project/2.jpg 992w, /img/project/2.jpg 768w, /img/project/2.jpg 480w, /img/project/2.jpg 240w"
-                                                    src="/img/project/2.jpg" /><noscript><img src="/img/project/2.jpg"
-                                                        class="a-responsive-image__img--fallback" /></noscript>
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <h2 class="m-text-image__title">کابین سنگ مصنوعی کد SM2</h2>
-                                    <div class="m-text-image__text">
-                                        <div class="a-richtext" data-t-name="Richtext">
-                                            <p>
-                                                </br>
-                                                <br>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-        </section>
-        <section class="h-layout__outer">
-            <div class="container">
-                <div class="h-layout__inner h-layout__inner--separator">
-                    <hr class="a-separator" data-t-name="Separator">
-                </div>
-            </div>
-        </section>
-        <section class="h-layout__outer">
-            <div class="h-layout__inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="h-layout__colctrl-item">
-                                <div class="m-text-image " data-t-name="">
-                                    <div class="m-text-image__image--top">
-                                        <a class="m-text-image__link" target="_self" href="#">
-                                            <picture class="a-responsive-image js-a-responsive-image  "
-                                                data-t-name="ResponsiveImage" data-fadeOut="100">
-                                                <div class="a-loader js-a-loader" data-t-name="Loader">
-                                                    <div class="a-loader__wrapper">
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                    </div>
-                                                </div><img class="a-responsive-image__img lazyload" data-sizes="auto"
-                                                    data-src="/img/project/3.jpg"
-                                                    data-srcset="/img/project/3.jpg 1200w, /img/project/3.jpg 992w, /img/project/3.jpg 768w, /img/project/3.jpg 480w, /img/project/3.jpg 240w"
-                                                    src="/img/project/3.jpg" /><noscript><img src="/img/project/3.jpg"
-                                                        class="a-responsive-image__img--fallback" /></noscript>
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <h2 class="m-text-image__title">کابین سنگ مصنوعی کد SM3</h2>
-                                    <div class="m-text-image__text">
-                                        <div class="a-richtext" data-t-name="Richtext">
-                                            <p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="col-md-6">
-                            <div class="h-layout__colctrl-item">
-                                <div class="m-text-image " data-t-name="">
-                                    <div class="m-text-image__image--top">
-                                        <a class="m-text-image__link" target="_self" href="#">
-                                            <picture class="a-responsive-image js-a-responsive-image  "
-                                                data-t-name="ResponsiveImage" data-fadeOut="100">
-                                                <div class="a-loader js-a-loader" data-t-name="Loader">
-                                                    <div class="a-loader__wrapper">
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                        <div class="a-loader__dot"></div>
-                                                    </div>
-                                                </div><img class="a-responsive-image__img lazyload" data-sizes="auto"
-                                                    data-src="/img/project/4.jpg"
-                                                    data-srcset="/img/project/4.jpg 1200w, /img/project/4.jpg 992w, /img/project/4.jpg 768w, /img/project/4.jpg 480w, /img/project/4.jpg 240w"
-                                                    src="/img/project/4.jpg" /><noscript><img src="/img/project/4.jpg"
-                                                        class="a-responsive-image__img--fallback" /></noscript>
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <h2 class="m-text-image__title">کابین سنگ مصنوعی کد SM4</h2>
-                                    <div class="m-text-image__text">
-                                        <div class="a-richtext" data-t-name="Richtext">
-                                            <p>
+                    @endforeach  
 
-                                            </p>
-                                        </div>
 
         </section>
+        
+        
     </div>
     <div class="iparys_inherited"></div>
 

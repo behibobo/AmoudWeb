@@ -32,8 +32,8 @@
         <img  style="border-radius:10px;" src="{{ asset('uploads/projects/'.$image->filename)}}" alt="">
       
   </div>
-</div>
   @endforeach
+  </div>
 </div>
 <div class="col-md-2"></div>
 </div>
