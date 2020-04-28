@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="edit-category" >ویرایش {{ $category->name }}</h1>
-
+<h1 style="text-align:center; margin-top:20px"> ویرایش {{ $category->name }}</h1>
+<div class="row">
+<div class="col-md-6 offset-md-3 create-category">
 <!-- if there are creation errors, they will show here -->
 {{ HTML::ul($errors->all()) }}
 
@@ -22,10 +23,12 @@
 		{{ Form::label('parent_id', 'Parent Category') }}
 		{{ Form::select('parent_id', $categories, $category->parent_id, array('placeholder' => 'select one', 'class' => 'form-control')) }}
 	</div>
-	<div class="edit-button-product">
+	<div class="btn-category">
 	{{ Form::submit('ویرایش دسته بندی', array('class' => 'btn btn-primary')) }}
 
 {{ Form::close() }}
 
+</div>
+</div>
 </div>
 @endsection

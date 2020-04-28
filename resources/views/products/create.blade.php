@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Create a product</h1>
+<h1 style="text-align:center; margin-top:20px"> محصول جدید</h1>
+<div class="row">
+<div class="col-md-6 offset-md-3 create-product">
 
 <!-- if there are creation errors, they will show here -->
 {{ HTML::ul($errors->all() )}}
@@ -27,8 +29,11 @@
 		{{ Form::label('category_id', 'Category') }}
 		{{ Form::select('category_id', $products, null, array('class' => 'form-control')) }}
 	</div>
-
-	{{ Form::submit('Create the product!', array('class' => 'btn btn-primary')) }}
-
+	<div class="btn-product">
+	{{ Form::submit('ایجاد محصول', array('class' => 'btn btn-primary')) }}
+	</div>
 {{ Form::close() }}
+
+</div>
+</div>
 @endsection

@@ -61,7 +61,14 @@ body {
   text-align: center;
 }
 
+.title-projects td{
+    text-align: center;
+  }
 .products-detail td{
+    text-align: center;
+    vertical-align: middle;
+}
+.projects-detail td{
     text-align: center;
     vertical-align: middle;
 }
@@ -99,7 +106,7 @@ body {
 }
 
 .new-category{
-    background-color: #47bd8c;
+    background-color: rgb(31, 199, 45);
     color:white;
     border-radius: 5px;
     padding: 10px;
@@ -117,6 +124,8 @@ height: 60px;
 border-bottom: 1px solid rgb(230, 230, 230);
 background-color: #f7f7f7 !important;
 color: white !important;
+border-bottom:1px solid rgb(31, 199, 45);
+border-top:1px solid rgb(31, 199, 45);
 
 }
 .edit-category{
@@ -147,8 +156,7 @@ color: white !important;
     padding: 20px;
     background-color: rgb(241, 241, 241);
 margin-bottom:20px;
-border:1px solid gray
-}
+border:1px solid rgb(31, 199, 45);}
 
 .edit-show-product{
     margin:20px;
@@ -166,17 +174,8 @@ border:none;
     border-radius: 10px;
 }
 
-.edit-button-product{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    
-}
-.edit-button-product input{
-padding: 15px;
-width:20%
-}
+
+
 
 .button-login{
     margin:auto;
@@ -186,5 +185,219 @@ width:20%
 .button-login:hover{
     
     text-decoration:none;
+
+}
+
+
+.create-project{
+    background-color: rgb(243, 243, 243);
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid rgb(31, 199, 45);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.create-project input{
+    border:1px solid rgb(31, 199, 45);
+    width:50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.btn-project{
+    width:50%;
+    margin: auto;
+
+}
+.btn-project input {
+    background-color:rgb(31, 199, 45) !important ;
+    border:1px solid white;
+}
+.btn-project input:hover {
+    border:1px solid white;
+    background-color:#32996e !important ;
+
+}
+
+.create-project textarea{
+    border:1px solid rgb(31, 199, 45);
+    margin: auto;
+    width: 80% !important;
+    text-align: right;
+    direction: rtl;
+}
+
+.border{
+ border:1px solid rgb(31, 199, 45) !important;
+}
+
+.btn-login{
+    background-color:rgb(31, 199, 45) !important ;
+    border:1px solid white;
+    width:40%;
+
+}
+
+.btn-login:hover{
+    background-color:#32996e !important ;
+    border:1px solid white;
+
+}
+.btn-login-style{
+    width:50%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-setpassword{
+    background-color:rgb(31, 199, 45) !important ;
+    border:1px solid white;
+}
+.btn-setpassword:hover{
+    background-color:#32996e !important ;
+    border:1px solid white; 
+}
+
+.btn-register{
+    background-color:rgb(31, 199, 45) !important ;
+    border:1px solid white;
+    width:50%;
+
+}
+
+.btn-register:hover{
+    background-color:#32996e !important ;
+    border:1px solid white;
+
+}
+.btn-category{
+    margin-top:40px
+}
+
+.btn-category input{
+    background-color:rgb(31, 199, 45) !important ;
+    border:1px solid white;
+    width:40% !important;
+
+}
+
+.btn-category input:hover{
+    background-color:#32996e !important ;
+    border:1px solid white;
+
+}
+
+
+.create-category{
+    background-color: rgb(243, 243, 243);
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid rgb(31, 199, 45);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.create-category input{
+    border:1px solid rgb(31, 199, 45);
+    width:50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.create-category select{
+    border:1px solid rgb(31, 199, 45);
+    width:50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.btn-product{
+    margin-top:40px
+}
+
+.btn-product input{
+    background-color:rgb(31, 199, 45) !important ;
+    border:1px solid white;
+    width:40% !important;
+
+}
+
+.btn-product input:hover{
+    background-color:#32996e !important ;
+    border:1px solid white;
+
+}
+
+.create-product{
+    background-color: rgb(243, 243, 243);
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid rgb(31, 199, 45);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.create-product input{
+    border:1px solid rgb(31, 199, 45);
+    width:50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.create-product textarea{
+    border:1px solid rgb(31, 199, 45);
+    width:80%;
+    margin: auto;
+    text-align: right;
+
+}
+
+.create-product select{
+    border:1px solid rgb(31, 199, 45);
+    width:50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.edit-product{
+    background-color: rgb(243, 243, 243);
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid rgb(31, 199, 45);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.edit-product input{
+    border:1px solid rgb(31, 199, 45);
+    width:50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.edit-product textarea{
+    border:1px solid rgb(31, 199, 45);
+    width:80%;
+    margin: auto;
+    text-align: right;
+
+}
+
+.edit-product select{
+    border:1px solid rgb(31, 199, 45);
+    width:50%;
+    margin: auto;
+    text-align: center;
 
 }

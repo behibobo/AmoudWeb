@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Create a category</h1>
-
+<h1 style="text-align:center; margin-top:20px"> دسته بندی جدید </h1>
+<div class="row">
+<div class="col-md-6 offset-md-3 create-category">
 <!-- if there are creation errors, they will show here -->
 {{ HTML::ul($errors->all() )}}
 
@@ -18,12 +19,14 @@
 		{{ Form::text('slug', Request::old('slug'), array('class' => 'form-control')) }}
 	</div>
 
-	<div class="form-group">
+	<div  class="form-group">
 		{{ Form::label('parent_id', 'Parent Category') }}
 		{{ Form::select('parent_id', $categories, null, array('placeholder' => 'select one', 'class' => 'form-control')) }}
 	</div>
-
-	{{ Form::submit('Create the category!', array('class' => 'btn btn-primary')) }}
-
+	<div  class="btn-category">
+	{{ Form::submit('ایجاد دسته بندی', array('class' => 'btn btn-primary ')) }}
+</div>
 {{ Form::close() }}
+</div>
+</div>
 @endsection

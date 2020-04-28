@@ -30,8 +30,9 @@
 			<td>{{ $value->category->name}}</td>
 
 			<!-- we will also add show, edit, and delete buttons -->
-			<td class="action-product">
 
+			<td class="action-product">
+<div style="width:50%;margin:auto">
 				<!-- delete the Product (uses the destroy method DESTROY /products/{id} -->
 				<!-- we will add this later since its a little more complicated than the first two buttons -->
 				{{ Form::open(array('url' => 'admin/products/' . $value->id, 'class' => 'pull-right')) }}
@@ -44,7 +45,7 @@
 
 				<!-- edit this Product (uses the edit method found at GET /products/{id}/edit -->
 				<a class="btn btn-small btn-info" href="{{ URL::to('admin/products/' . $value->id . '/edit') }}">ویرایش محصول</a>
-
+</div>
 			</td>
 		</tr>
 	@endforeach

@@ -2,9 +2,8 @@
 
 @section('content')
 
-<div class="row">
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
+<div class="row"  style="margin-top:20px">
+  <div class="col-md-4 offset-md-4" style="text-align:center;">
     <form method="post" action="{{url('admin/productImage')}}" enctype="multipart/form-data">
       {{csrf_field()}}
 
@@ -14,17 +13,15 @@
         <input type="hidden" name="item_id" value="{{ $product->id}}">
       </div>
 
-      <button type="submit" class="btn btn-success" style="margin:20px; width:100%">Submit</button>
+      <button type="submit" class="btn btn-success" style="margin:20px; width:50%">Submit</button>
 
 
     </form>
   </div>
 
-  <div class="col-md-4"></div>
 </div>
 <div class="row" style="margin-bottom:30px">
-<div class="col-md-2"></div>
-<div class="col-md-8">
+<div class="col-md-8 offset-md-2">
 <div class="image_container">
   @foreach($images as $image)
 
@@ -36,6 +33,5 @@
   </div>
 
 </div>
-<div class="col-md-2"></div>
 </div>
 @endsection

@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="row">
+	<div class="col-md-10 offset-md-1">
+
 <h1 style="text-align:center;  padding-bottom:20px; "></h1>
 <div style="text-align:right; margin:20px; ">
 
@@ -13,7 +16,7 @@
 	<div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-<table style="direction:rtl" class="table table-striped table-bordered">
+<table style="direction:rtl;" class="table table-striped table-bordered">
 	<thead>
 		<tr class='title-category'>
 			<td>ID</td>
@@ -33,6 +36,7 @@
 
 			<!-- we will also add show, edit, and delete buttons -->
 			<td class="action-category">
+				<div style="width:50%;margin:auto">
 
 				<!-- delete the Category (uses the destroy method DESTROY /categories/{id} -->
 				<!-- we will add this later since its a little more complicated than the first two buttons -->
@@ -46,10 +50,12 @@
 
 				<!-- edit this Category (uses the edit method found at GET /categories/{id}/edit -->
 				<a class="btn btn-small btn-info" href="{{ URL::to('admin/categories/' . $value->id . '/edit') }}">ویرایش دسته بندی</a>
-
+				</div>
 			</td>
 		</tr>
 	@endforeach
 	</tbody>
 </table>
+</div>
+</div>
 @endsection

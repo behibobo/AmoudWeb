@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="row">
+<div class="col-md-8 offset-md-2">
 <h1 style="text-align:center; padding-bottom:20px;"></h1>
 
 <div style="text-align:right; margin:20px;">
-<a class="new-category" href="/admin/projects/create">محصول جدید</a>
+<a class="new-category" href="/admin/projects/create">پروژه جدید</a>
 </div>
 <!-- will be used to show any messages -->
 @if (Session::has('message'))
@@ -46,4 +48,6 @@
 	@endforeach
 	</tbody>
 </table>
+</div>
+</div>
 @endsection
