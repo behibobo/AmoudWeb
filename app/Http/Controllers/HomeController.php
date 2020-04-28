@@ -19,12 +19,13 @@ class HomeController extends Controller
     }
     public function gallery()
     {
-        return view('home.gallery');
+        $images = Upload::where('type', 'gallery')->get();
+        return view('home.gallery')->with('images', $images);
     }
     public function projects()
     {
         $projects = Project::all();
-        return view('home.projects')->with('projects', $projects);;
+        return view('home.projects')->with('projects', $projects);
     }
     public function contact()
     {

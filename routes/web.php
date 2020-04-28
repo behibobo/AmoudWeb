@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 Route::get('/', 'HomeController@home');
@@ -29,7 +26,9 @@ Route::group(['prefix' => 'admin'], function () {
         Route::resource('categories', 'CategoriesController');
         Route::resource('products', 'ProductsController');
         Route::resource('projects', 'ProjectsController');
+        Route::resource('galleries', 'GalleryController');
         Route::post('projectImage', 'ProjectsController@uploadImages');
         Route::post('productImage', 'ProductsController@uploadImages');
+        Route::get('removeImage/{id}', 'GalleryController@removeImage');
     });
 });

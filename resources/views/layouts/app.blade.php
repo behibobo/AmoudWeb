@@ -83,6 +83,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/admin/projects">پروژه ها</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/galleries">گالری تصاویر</a>
+                            </li>
                         @endguest
                     </ul>
                 </div>

@@ -27,7 +27,9 @@
 
   <div class="image_box" >
         <img  style="border-radius:10px;" src="{{ asset('uploads/products/'.$image->filename)}}" alt="">
-      
+        <a href="/admin/removeImage/{{$image->id}}" class="btn btn-danger btn-xs">
+			delete
+		</a>
   </div>
   @endforeach
   </div>
