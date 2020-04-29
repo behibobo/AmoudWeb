@@ -19,11 +19,11 @@
 <table style="direction:rtl;" class="table table-striped table-bordered">
 	<thead>
 		<tr class='title-category'>
-			<td>ID</td>
-			<td>Name</td>
-			<td>Slug</td>
-			<td>Parent</td>
-			<td>Actions</td>
+			<td>آی دی</td>
+			<td>نام دسته بندی</td>
+			<td>کلمه کلیدی</td>
+			<td>زیر گروه</td>
+			<td>اقدامات</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -36,7 +36,7 @@
 
 			<!-- we will also add show, edit, and delete buttons -->
 			<td class="action-category">
-				<div style="width:50%;margin:auto">
+				<div style="width:60%;margin:auto">
 
 				<!-- delete the Category (uses the destroy method DESTROY /categories/{id} -->
 				<!-- we will add this later since its a little more complicated than the first two buttons -->

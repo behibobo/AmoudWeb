@@ -12,12 +12,12 @@
 {{ Form::open(array('url' => 'admin/projects')) }}
 
 	<div class="form-group">
-		{{ Form::label('name', 'Name') }}
+		{{ Form::label('name', 'نام پروژه') }}
 		{{ Form::text('name', Request::old('name'), array('class' => 'form-control')) }}
 	</div>
 
 	<div class="form-group">
-		{{ Form::label('desc', 'Description') }}
+		{{ Form::label('desc', 'توضیحات') }}
 		{{ Form::textarea('desc', Request::old('desc'), array('class' => 'form-control')) }}
 	</div>
 

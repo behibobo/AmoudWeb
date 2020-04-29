@@ -71,13 +71,14 @@
             <div class="container">
                 <div class="h-layout__logo">
                     <div class="a-logo" data-t-name="Logo">
-                        <a href="/home.html" class="a-logo__link">
-                            <picture>
+                        <a href="/" class="a-logo__link">
+                            <!-- <picture>
                                 <source media="(max-width: 499px)" srcset="/img/logo.png">
                                 <source media="(min-width: 500px)" srcset="/img/logo.png">
-                                <img src="/img/logo.png" alt="به شرکت فنی و مهندسی عمودسیر خوش آمدید" title="amoudseir"
+                                
+                            </picture> -->
+                            <img style="padding-top:10px" src="/img/logo.png" alt="به شرکت فنی و مهندسی عمودسیر خوش آمدید" title="amoudseir"
                                     class="a-logo__main">
-                            </picture>
                         </a>
                     </div>
                 </div>
@@ -92,7 +93,7 @@
                     <ul class="m-nav-service__list">
                         <li class="m-nav-service__item m-nav-service__item--country-selector">
                             <button class="m-overlay__link">
-                                <span class="m-overlay__link__text">شرکت فنی و مهندسی عمود سیر</span>
+                                <span class="m-overlay__link__text">شرکت فنی و مهندسی عمود سیر تبریز</span>
                             </button>
                             <div class="a-loader js-a-loader">
                                 <svg class="a-loader__icon a-loader__icon--inner" version="1.1"
@@ -239,7 +240,7 @@
                             <li class="m-nav-main__list-item">
 
                                 <a href="/about" target="_self" class="m-nav-main__list-link js-nav-main__list-link"><b>با
-                                        عمودسیر بیشتر آشنا شوید </b></a>
+                                        عمود سیر بیشتر آشنا شوید </b></a>
 
 
                             </li>
@@ -358,14 +359,14 @@
                                     <div class="a-richtext a-richtext--footer" data-t-name="Richtext">
                                         <p style="padding-right:50px;">آدرس دفتر : تبریز - ولیعصر - خیابان رودکی - جنب
                                             کلینیک پوست و موی ایرانیان - طبقه اول </br>
-                                            تلفن: <a href="tel:+984136373142">04136373142</a><br>
+                                            تلفن: <a  href="tel:+984133326520">04133326520 </a><br>
                                             <br>
                                             آدرس فروشگاه : تبریز - ولیعصر جنوبی - خیابان سعدی - <br>
                                             تلفن: <a href="tel:+984133325048">04133325048</a>
                                             <br>
                                             <br>
                                             آدرس کارگاه : تبریز - سه راهی اهر - کوچه ایلیار - <br>
-                                            تلفن: <a href="tel:+984133325048">04133325048</a></p>
+                                            تلفن: <a href="tel:+984136373142">04136373142</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -374,12 +375,12 @@
                     <div class="row">
                         <div class="col-lg-12"
                             style="text-align: center; display: flex; justify-content: center; align-items: center;">
-                            <a href="">
-                                <p style="  font-size: 20px;"> amoudseir@</p>
+                            <a style="text-decoration:none" href="">
+                                <p style="  font-size: 20px;color:rgb(169, 111, 245)"> amoudseir@</p>
                             </a>
                             <img src="/img/insta.png" style="width: 50px; height: 50px;" />
-                            <a href="">
-                                <p style="  font-size: 20px; padding-right: 20px;"> amoud_seir_co@ </p>
+                            <a style="text-decoration:none" href="">
+                                <p style="  font-size: 20px; padding-right: 20px;color:rgb(88, 186, 211)"> amoud_seir_co@ </p>
                             </a>
                             <img src="/img/telegram.png" style="width: 40px; height: 40px;" />
                         </div>

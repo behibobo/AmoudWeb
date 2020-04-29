@@ -11,13 +11,13 @@
 {{ Form::model($project, array('action' => array('ProductsController@update', $project->id), 'method' => 'PUT')) }}
 
 	<div class="form-group">
-		{{ Form::label('name', 'Name') }}
+		{{ Form::label('name', 'نام پروژه') }}
 		{{ Form::text('name', null, array('class' => 'form-control')) }}
 	</div>
 
 
 	<div class="form-group">
-		{{ Form::label('desc', 'Description') }}
+		{{ Form::label('desc', 'توضیحات') }}
 		{{ Form::textarea('desc', null, array('class' => 'form-control')) }}
 	</div>
 	<div class="btn-project">

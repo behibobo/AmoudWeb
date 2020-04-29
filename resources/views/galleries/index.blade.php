@@ -9,11 +9,11 @@
       {{csrf_field()}}
 
 
-      <div class="input-group hdtuto control-group lst increment edit-show-project">
-        <input style="border:none" type="file" name="images[]" class="myfrm form-control" multiple>
+      <div  class="input-group hdtuto control-group lst increment edit-show-project">
+        <input  style="border:none" type="file" name="images[]" class="myfrm form-control" multiple>
       </div>
 
-      <button type="submit" class="btn btn-success" style="margin:20px; width:50%">Submit</button>
+      <button type="submit" class="btn btn-success" style="margin:20px; width:50%">آپلود عکس</button>
 
 
     </form>
@@ -21,16 +21,18 @@
 
   
 </div>
-<div class="row" style="margin-bottom:30px;">
-<div class="col-md-8 offset-md-2">
-<div class="image_container">
+<div class="row" style="margin-bottom:30px;direction:rtl">
+<div class="col ">
+<div style="flex-wrap:wrap" class="image_container">
   @foreach($images as $image)
 
-  <div class="image_box" >
-        <img  style="border-radius:10px;" src="{{ asset('uploads/galleries/'.$image->filename)}}" alt="">
-		<a href="/admin/removeImage/{{$image->id}}" class="btn btn-danger btn-xs">
-			delete
+  <div class="image_box" style="min-width:25%;border:1px solid rgb(31, 199, 45);border-radius:10px 10px 0 0;">
+        <img  style="border-radius:10px 10px 0 0;" src="{{ asset('uploads/galleries/'.$image->filename)}}" alt="">
+        <div style="text-align:center; margin-top:10px">
+		<a  href="/admin/removeImage/{{$image->id}}" class="btn btn-danger btn-xs">
+			حذف عکس
 		</a>
+    </div>
   </div>
   @endforeach
   </div>

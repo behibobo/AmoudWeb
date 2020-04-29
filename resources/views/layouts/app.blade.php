@@ -49,11 +49,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('ورود') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>
                                 </li>
                             @endif
                         @else
@@ -62,11 +62,11 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                <div style="border:1px solid rgb(31, 199, 45)" class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a style="text-align:center" class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('خروج') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -75,17 +75,20 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/categories">دسته بندی ها</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/admin/products">محصولات</a>
+                                <a class="nav-link" href="/admin/galleries">گالری تصاویر</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/admin/projects">پروژه ها</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/admin/galleries">گالری تصاویر</a>
+                                <a class="nav-link" href="/admin/products">محصولات</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/admin/categories">دسته بندی ها</a>
+                            </li>
+                           
+                            
+                          
                         @endguest
                     </ul>
                 </div>

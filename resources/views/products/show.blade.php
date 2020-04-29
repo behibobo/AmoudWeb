@@ -13,7 +13,7 @@
         <input type="hidden" name="item_id" value="{{ $product->id}}">
       </div>
 
-      <button type="submit" class="btn btn-success" style="margin:20px; width:50%">Submit</button>
+      <button type="submit" class="btn btn-success" style="margin:20px; width:50%">آپلود عکس</button>
 
 
     </form>
@@ -21,15 +21,17 @@
 
 </div>
 <div class="row" style="margin-bottom:30px">
-<div class="col-md-8 offset-md-2">
+<div class="col">
 <div class="image_container">
   @foreach($images as $image)
 
-  <div class="image_box" >
-        <img  style="border-radius:10px;" src="{{ asset('uploads/products/'.$image->filename)}}" alt="">
+  <div class="image_box"  style="border:1px solid rgb(31, 199, 45);border-radius:10px 10px 0 0;">
+        <img  style="border-radius:10px 10px 0 0;" src="{{ asset('uploads/products/'.$image->filename)}}" alt="">
+        <div style="text-align:center; margin-top:10px">
         <a href="/admin/removeImage/{{$image->id}}" class="btn btn-danger btn-xs">
-			delete
+			حذف عکس
 		</a>
+  </div>
   </div>
   @endforeach
   </div>

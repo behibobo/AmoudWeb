@@ -25431,7 +25431,7 @@
      background: #fff;
      box-shadow: 0 0 20px rgba(0, 0, 0, .4);
      padding-top: 18px;
-     padding-bottom: 18px;
+     padding-bottom: 8px;
      position: fixed;
      top: 0;
      width: 100%
@@ -25445,7 +25445,7 @@
  @media (min-width:1025px) {
      .h-layout__header {
          box-shadow: none;
-         padding-top: 27px;
+         padding-top: 0;
          position: absolute
      }
      .h-layout__service-header {
@@ -25514,7 +25514,8 @@
  .h-layout__header-container {
      z-index: 90;
      background-color: #fff;
-     position: relative
+     position: relative;
+     max-height: 70px;
  }
  
  .h-layout__header-container:after {
@@ -27171,7 +27172,7 @@
  
  .a-richtext--abstract p {
      font-family:"IRANSans" ,f Frutiger, Frutiger Paneuropean, Arial, sans-serif;
-     font-size: 18px;
+     font-size: 15px;
      line-height: 33px;
      letter-spacing: .14px;
      color: #706f6f;
@@ -29542,7 +29543,7 @@
  @media screen and (min-width:1024px) {
      .m-footer-address h2 {
          font-family:"IRANSans" ,f Frutiger, Frutiger Paneuropean, Arial, sans-serif;
-         font-size: 30px;
+         font-size: 20px;
          line-height: 39px;
          letter-spacing: 0
      }
@@ -31788,7 +31789,7 @@ text-align: right;     }
  @media screen and (min-width:1024px) and (min-width:1024px) {
      .m-link-teaser__content-text {
          font-family:"IRANSans" ,f Frutiger, Frutiger Paneuropean, Arial, sans-serif;
-         font-size: 21px;
+         font-size: 15px;
          line-height: 30px;
          letter-spacing: -1px
      }
@@ -31917,7 +31918,7 @@ text-align: right;     }
  @media screen and (min-width:1024px) {
      .m-link-tiles__text-box {
          font-family:"IRANSans" ,f Frutiger, Frutiger Paneuropean, Arial, sans-serif;
-         font-size: 21px;
+         font-size: 15px;
          line-height: 30px;
          letter-spacing:-1px
      }
@@ -32130,7 +32131,7 @@ text-align: right;     }
  @media screen and (min-width:1025px) and (min-width:1024px) {
      .m-nav-main__list-link {
          font-family:"IRANSans" ,f Frutiger, Frutiger Paneuropean, Arial, sans-serif;
-         font-size: 21px;
+         font-size: 15px;
          line-height: 30px;
          letter-spacing:-1px
      }
@@ -32826,7 +32827,9 @@ text-align: right;     }
      }
      .m-nav-service__list {
          display: -ms-flexbox;
-         display: flex
+         display: flex;
+         padding-top: 30px;
+
      }
      .m-nav-service__item {
          display: inline-block;
@@ -35030,7 +35033,7 @@ text-align: right;     }
  @media screen and (min-width:1024px) {
      .m-solutions-quick-access__title {
          font-family:"IRANSans" ,f Frutiger, Frutiger Paneuropean, Arial, sans-serif;
-         font-size: 25px;
+         font-size: 20px;
          line-height: 39px;
          letter-spacing: 0
      }
@@ -36462,7 +36465,7 @@ text-align: right;     }
  @media screen and (min-width:1024px) {
      .m-text-image__title {
          font-family:"IRANSans" , Frutiger, Frutiger Paneuropean, Arial, sans-serif;
-         font-size: 30px;
+         font-size: 20px;
          line-height: 39px;
          letter-spacing: 0
      }

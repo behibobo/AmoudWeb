@@ -16,9 +16,9 @@
 <table style="direction:rtl" class="table table-striped table-bordered">
 	<thead>
 		<tr class='title-projects'>
-			<td>ID</td>
-			<td>Name</td>
-			<td>Actions</td>
+			<td>آی دی</td>
+			<td>نام پروژه</td>
+			<td>اقدامات</td>
 		</tr>
 	</thead>
 	<tbody>

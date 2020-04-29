@@ -255,6 +255,7 @@ border:none;
 .btn-setpassword{
     background-color:rgb(31, 199, 45) !important ;
     border:1px solid white;
+    margin:auto
 }
 .btn-setpassword:hover{
     background-color:#32996e !important ;
@@ -313,8 +314,9 @@ border:none;
     border:1px solid rgb(31, 199, 45);
     width:50%;
     margin: auto;
-    text-align: center;
-
+    text-align: right;
+    padding:0;
+    direction:rtl;
 }
 
 .btn-product{
@@ -365,6 +367,8 @@ border:none;
     width:50%;
     margin: auto;
     text-align: center;
+    padding:0;
+    direction:rtl;
 
 }
 
@@ -399,5 +403,7 @@ border:none;
     width:50%;
     margin: auto;
     text-align: center;
+    padding:0;
+    direction:rtl;
 
 }

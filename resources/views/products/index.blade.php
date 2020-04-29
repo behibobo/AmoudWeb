@@ -14,11 +14,11 @@
 <table style="direction:rtl" class="table table-striped table-bordered">
 	<thead>
 		<tr class='title-products'>
-			<td>ID</td>
-			<td>Name</td>
-			<td>Slug</td>
-			<td>Category</td>
-			<td>Actions</td>
+			<td>آی دی</td>
+			<td>نام محصول</td>
+			<td>کلمه کلیدی</td>
+			<td>دسته بندی </td>
+			<td>اقدامات</td>
 		</tr>
 	</thead>
 	<tbody>

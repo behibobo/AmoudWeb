@@ -549,10 +549,10 @@
                         </picture>
                     </div>
 
-                    <div class="m-link-teaser__right">
-                        <div class="m-link-teaser__content">
+                    <div class="m-link-teaser__right" >
+                        <div class="m-link-teaser__content" >
                             <p class="m-link-teaser__content-text">دلایل زیادی را که می خواهید به تیم ما بپیوندید ،
-                                </br>کشف کنید.</p>
+                                کشف کنید.</p>
                         </div>
                         <div class="m-link-teaser__button-container">
 

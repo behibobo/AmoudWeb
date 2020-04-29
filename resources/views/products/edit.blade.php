@@ -12,22 +12,22 @@
 {{ Form::model($product, array('action' => array('ProductsController@update', $product->id), 'method' => 'PUT')) }}
 
 	<div class="form-group">
-		{{ Form::label('name', 'Name') }}
+		{{ Form::label('name', 'نام محصول') }}
 		{{ Form::text('name', null, array('class' => 'form-control')) }}
 	</div>
 
 	<div class="form-group">
-		{{ Form::label('slug', 'Slug') }}
+		{{ Form::label('slug', 'کلمه کلیدی') }}
 		{{ Form::text('slug', null, array('class' => 'form-control')) }}
 	</div>
 
 	<div class="form-group">
-		{{ Form::label('desc', 'Description') }}
+		{{ Form::label('desc', 'توضیحات محصول') }}
 		{{ Form::textarea('desc', null, array('class' => 'form-control')) }}
 	</div>
 
 	<div class="form-group">
-		{{ Form::label('category_id', 'category') }}
+		{{ Form::label('category_id', 'دسته بندی') }}
 		{{ Form::select('category_id', $categories, $product->category_id, array('class' => 'form-control')) }}
 	</div>
 	<div class="btn-product">

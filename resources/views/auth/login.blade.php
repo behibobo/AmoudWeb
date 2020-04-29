@@ -5,14 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card border">
-                <div style="border-bottom:1px solid rgb(31, 199, 45)" class="card-header ">{{ __('Login') }}</div>
+                <div style="border-bottom:1px solid rgb(31, 199, 45);text-align:right;" class="card-header ">{{ __('ورود') }}</div>
 
                 <div class="card-body ">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form style="direction:rtl" method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }} :</label>
+                            <label for="email" class="col-md-4 col-form-label ">{{ __('آدرس ایمیل') }} :</label>
 
                             <div class="col-md-6">
                                 <input style="width:80%;border:1px solid rgb(31, 199, 45)" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }} :</label>
+                            <label for="password" class="col-md-4 col-form-label ">{{ __(' کلمه عبور') }} :</label>
 
                             <div class="col-md-6">
                                 <input style="width:80%;border:1px solid rgb(31, 199, 45)"  id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -39,22 +39,22 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
+                        <div class="form-group " style='text-align:center' >
+                            
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                    <input  class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
+                                    <label style="margin-right:20px" class="form-check-label" for="remember">
+                                        {{ __('مرا به خاطر بسپار') }}
                                     </label>
                                 </div>
-                            </div>
+                            
                         </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4 btn-login-style">
                                 <button  type="submit" class="btn btn-primary btn-login">
-                                    {{ __('Login') }}
+                                    {{ __('ورود') }}
                                 </button>
                                 </div>
                                
@@ -64,7 +64,7 @@
 
                         @if (Route::has('password.request'))
                                     <a  class="btn btn-link button-login" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('رمز عبور خود را فراموش کرده اید ؟') }}
                                     </a>
                                 @endif
 </div>

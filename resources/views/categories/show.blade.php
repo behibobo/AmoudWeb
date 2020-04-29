@@ -9,17 +9,17 @@
 	<div style="direction:rtl;" class="jumbotron text-center show-category">
 
 	<div >
-	<span >Name :</span>	
+	<span >نام دسته بندی :</span>	
 	<span>{{ $category->name }}</span>
 
 	</div>
 	<div >
-	<span >slug :</span>	
+	<span >کلمه کلیدی :</span>	
 	<span>{{ $category->slug }}</span>
 
 	</div>
 	<div >
-	<span >parent :</span>	
+	<span >زیرگروه :</span>	
 	<span>{{ $category->parent->name ?? "" }}</span>
 
 	</div>

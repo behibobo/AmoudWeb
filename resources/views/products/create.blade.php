@@ -11,22 +11,22 @@
 {{ Form::open(array('url' => 'admin/products')) }}
 
 	<div class="form-group">
-		{{ Form::label('name', 'Name') }}
+		{{ Form::label('name', 'نام محصول') }}
 		{{ Form::text('name', Request::old('name'), array('class' => 'form-control')) }}
 	</div>
 
 	<div class="form-group">
-		{{ Form::label('slug', 'Slug') }}
+		{{ Form::label('slug', 'کلمه کلیدی') }}
 		{{ Form::text('slug', Request::old('slug'), array('class' => 'form-control')) }}
 	</div>
 
 	<div class="form-group">
-		{{ Form::label('desc', 'Description') }}
+		{{ Form::label('desc', 'توضیحات محصول') }}
 		{{ Form::textarea('desc', Request::old('desc'), array('class' => 'form-control')) }}
 	</div>
 
 	<div class="form-group">
-		{{ Form::label('category_id', 'Category') }}
+		{{ Form::label('category_id', 'دسته بندی محصول') }}
 		{{ Form::select('category_id', $products, null, array('class' => 'form-control')) }}
 	</div>
 	<div class="btn-product">
