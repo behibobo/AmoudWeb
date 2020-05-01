@@ -25532,14 +25532,16 @@
  .h-layout__logo {
      float: left;
  }
+ .social-icons a{
+margin:10px }
  
  .h-layout__background-image--teaser {
      display: none
  }
  
  .social-icons img {
-     width: 25px;
-     height: 25px
+     width: 35px;
+     height: 35px
 
  }
  @media (min-width:768px) {
