@@ -27,8 +27,8 @@
 <div class="image_container">
   @foreach($images as $image)
 
-  <div class="image_box"  style="border:1px solid rgb(31, 199, 45);border-radius:10px 10px 0 0;">
-        <img  style="border-radius:10px 10px 0 0;" src="{{ asset('uploads/projects/'.$image->filename)}}" alt="">
+  <div class="image_box show-project-image" >
+        <img   style="border-radius:10px 10px 0 0;" src="{{ asset('uploads/projects/'.$image->filename)}}" alt="">
         <div style="text-align:center; margin-top:10px">
         <a href="/admin/removeImage/{{$image->id}}" class="btn btn-danger btn-xs">
 			حذف عکس

@@ -6,7 +6,7 @@
 {{ Form::open(array('url' => 'categories')) }}
 <h1 class="edit-category">نمایش {{ $category->name }}</h1>
 
-	<div style="direction:rtl;" class="jumbotron text-center show-category">
+	<div  class=" jumbotron text-center show-category">
 
 	<div >
 	<span >نام دسته بندی :</span>	

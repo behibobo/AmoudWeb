@@ -2,6 +2,11 @@
 
 @section('content')
 <div class="row">
+<div class="col-md-6 offset-md-3 create-category-sub">
+<h1 > ویرایش {{ $project->name }}</h1>
+</div>
+</div>
+<div class="row">
 <div class="col-md-6 offset-md-3 create-project">
 
 <div style="margin-top:20px">

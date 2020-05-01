@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 style="text-align:center; margin-top:20px"> محصول جدید</h1>
+<div class="row">
+<div class="col-md-6 offset-md-3 create-category-sub">
+<h1 > محصول جدید</h1>
+</div>
+</div>
 <div class="row">
 <div class="col-md-6 offset-md-3 create-product">
 

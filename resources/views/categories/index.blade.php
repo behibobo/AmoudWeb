@@ -16,7 +16,7 @@
 	<div class="alert alert-info">{{ Session::get('message') }}</div>
 @endif
 
-<table style="direction:rtl;" class="table table-striped table-bordered">
+<table style="direction:rtl;box-shadow: 5px 3px 18px #ccc" class="table table-striped table-bordered">
 	<thead>
 		<tr class='title-category'>
 			<td>آی دی</td>

@@ -1,11 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 style="text-align:center; margin-top:20px">ایجاد پروژه جدید</h1>
+<div class="row">
+<div class="col-md-6 offset-md-3 create-category-sub">
+<h1 >ایجاد پروژه جدید</h1>
+</div>
+</div>
 <div class="row">
 <div class="col-md-6 offset-md-3 create-project">
 
-<div style="margin-top:20px">
+<div >
 <!-- if there are creation errors, they will show here -->
 {{ HTML::ul($errors->all() )}}
 

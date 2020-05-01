@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container"  style="margin-top:20px">
+<div class="container"  style="margin-top:40px">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card border">
-                <div class="card-header" style="border-bottom:1px solid rgb(31, 199, 45);text-align:right">{{ __('بازنشانی گذرواژه') }}</div>
+            <div class="card border" style="box-shadow: 5px 3px 18px #ccc;border-radius:10px">
+                <div class="card-header" style="text-align:right;background-color:white;border-radius:10px 10px 0 0">{{ __('بازنشانی گذرواژه') }}</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -21,7 +21,7 @@
                             <label for="email" class="col-md-4 col-form-label ">{{ __('آدرس ایمیل') }}</label>
 
                             <div class="col-md-6">
-                                <input style="border:1px solid rgb(31, 199, 45);width:80%" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                <input style="background-color:rgba(0, 0, 0, 0.03);width:80%" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">

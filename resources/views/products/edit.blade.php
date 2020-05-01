@@ -3,9 +3,14 @@
 @section('content')
 <!-- <h1 class="edit-category" >ویرایش  {{ $product->name }}</h1> -->
 <div class="row">
+<div class="col-md-6 offset-md-3 create-category-sub">
+<h1 > ویرایش {{ $product->name }}</h1>
+</div>
+</div>
+<div class="row">
 <div class="col-md-6 offset-md-3 edit-product">
 
-<div style="margin-top:20px">
+<div >
 <!-- if there are creation errors, they will show here -->
 {{ HTML::ul($errors->all()) }}
 
