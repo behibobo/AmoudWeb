@@ -20329,6 +20329,7 @@
      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'%3E%3Cpath d='M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z' fill='%23007aff'/%3E%3C/svg%3E");
      left: 10px;
      right: auto;
+     transform: rotateY(180deg);
  }
  
  .swiper-button-prev.swiper-button-black,
@@ -25287,7 +25288,7 @@
  
  @media (min-width:1025px) {
      .h-layout__page--stage-elevator-visible {
-         padding-top: 165px
+         padding-top: 135px
      }
      .h-layout__page--stage-elevator-visible .h-layout__header {
          padding-bottom: 0
@@ -25437,11 +25438,55 @@
      width: 100%
  }
  
- .h-layout__service-header {
-     display: -ms-flexbox;
-     display: flex
+ .top_header{
+     display: flex;
+     justify-items: flex-end;
+     align-content: center;
+     align-items: center;
  }
- 
+ .top_header .company_name {
+     font-weight: bold;
+     font-size: 16px;
+     letter-spacing: -1px;
+     margin: 0 15px;
+ }
+ .top_header .a-logo {
+     margin-right: 45px;
+ }
+ .social-icons {
+     display: flex;
+     flex:3;
+     justify-content: flex-end;
+ }
+ .address_box {
+     box-sizing: border-box;
+     border-radius: 12px;
+     height: 160px;
+     border:thin solid #e7e7e7;
+     padding: 15px;
+     font-size: 15px;
+     letter-spacing: -1px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+ }
+ .address_box .address {
+    text-align: center;
+ }
+ .address_box .phone {
+     width: 60%;
+     margin:0 auto;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ .address_box .phone span {
+    font-size: 18px;
+ }
+ .address_box .phone img {
+    height: 40px;
+    width: 40px;
+ }
  @media (min-width:1025px) {
      .h-layout__header {
          box-shadow: none;
@@ -25492,6 +25537,11 @@
      display: none
  }
  
+ .social-icons img {
+     width: 25px;
+     height: 25px
+
+ }
  @media (min-width:768px) {
      .h-layout__background-image--teaser {
          display: block;
@@ -31993,7 +32043,8 @@ text-align: right;     }
      padding-top: 16px;
      padding-bottom: 16px;
      box-sizing: content-box;
-     cursor: pointer
+     cursor: pointer;
+     margin-right: 20px;
  }
  
  .m-nav-burger:after {
@@ -32455,7 +32506,8 @@ text-align: right;     }
      margin-left: -30px;
      margin-top: 2px;
      position: absolute;
-     transform: rotate(180deg)
+     transform: rotate(180deg);
+     right: 70px;
  }
  
  .m-nav-off__lang {

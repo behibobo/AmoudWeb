@@ -21,42 +21,54 @@
     <meta property="og:title" content="شرکت فنی و مهندسی عمودسیر تبریز " />
     <meta property="og:url" content="http://www.amoudseir.com/home.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:description"
-        content="Learn how amoudseir manufactures, installs, maintains, modernizes elevators and escalators for almost every type of building requirement worldwide.amoudseir can See how we move more than 1 billion people daily." />
+    <meta property="og:description" content="Learn how amoudseir manufactures, installs, maintains, modernizes elevators and escalators for almost every type of building requirement worldwide.amoudseir can See how we move more than 1 billion people daily." />
     <meta property="og:image" content="" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@amoudseir" />
     <meta name="twitter:title" content="شرکت فنی و مهندسی عمودسیر تبریز " />
-    <meta name="twitter:description"
-        content="Learn how amoudseir manufactures, installs, maintains, modernizes elevators and escalators for almost every type of building requirement worldwide.amoudseir can See how we move more than 1 billion people daily." />
+    <meta name="twitter:description" content="Learn how amoudseir manufactures, installs, maintains, modernizes elevators and escalators for almost every type of building requirement worldwide.amoudseir can See how we move more than 1 billion people daily." />
     <meta name="twitter:url" content="http://www.amoudseir.com/home.html" />
     <meta name="twitter:image" content="" />
-    <meta name="keywords"
-        content="homepage, elevators, escalators, sales, installation, maintenance, service, modernization, company" />
-    <meta name="description"
-        content="Learn how amoudseir manufactures, installs, maintains, modernizes elevators and escalators for almost every type of building requirement worldwide.amoudseir can See how we move more than 1 billion people daily." />
+    <meta name="keywords" content="homepage, elevators, escalators, sales, installation, maintenance, service, modernization, company" />
+    <meta name="description" content="Learn how amoudseir manufactures, installs, maintains, modernizes elevators and escalators for almost every type of building requirement worldwide.amoudseir can See how we move more than 1 billion people daily." />
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.min.css') }}">
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=Ylhhf3I6O1LMk7vhpe-crQ&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MSL3JWS');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=Ylhhf3I6O1LMk7vhpe-crQ&gtm_preview=env-2&gtm_cookies_win=x';
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MSL3JWS');
+    </script>
     <!-- End Google Tag Manager -->
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MSW938R');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MSW938R');
+    </script>
     <!-- End Google Tag Manager -->
 
     <meta name="google-site-verification" content="Dfv91BVg-1BOHKA3mj4Y5e2hyAqdGaoIfEYE6tITsOA" />
@@ -68,100 +80,30 @@
 
     <header class="m-header h-layout__header" data-t-name="Header" role="banner">
         <div class="h-layout__header-container js-h-layout__header-container">
+
             <div class="container">
-                <div class="h-layout__logo">
+                <div class="top_header">
+                    <div class="m-nav-burger" data-t-name="NavBurger">
+                        <span class="m-nav-burger__burger"></span>
+                    </div>
                     <div class="a-logo" data-t-name="Logo">
                         <a href="/" class="a-logo__link">
-                            <!-- <picture>
-                                <source media="(max-width: 499px)" srcset="/img/logo.png">
-                                <source media="(min-width: 500px)" srcset="/img/logo.png">
-                                
-                            </picture> -->
-                            <img style="padding-top:10px" src="/img/logo.png" alt="به شرکت فنی و مهندسی عمودسیر خوش آمدید" title="amoudseir"
-                                    class="a-logo__main">
+                            <img style="padding-top:10px" src="/img/logo.png" alt="به شرکت فنی و مهندسی عمودسیر خوش آمدید" title="amoudseir" class="a-logo__main">
                         </a>
+                    </div>
+                    <div class="company_name">شرکت فنی و مهندسی عمود سیر تبریز</span>
+                    </div>
+                    
+                    <div class="social-icons">
+                    <a href="https://www.telegram.org/amoudseir">
+                        <img src="/img/telegram.png"  />
+                    </a>
+                    <a href="https://www.instagram.com/amoud_seir_co">
+                        <img src="/img/insta.png"  />
+                    </a>
                     </div>
                 </div>
             </div>
-
-
-            <div class="h-layout__service-header">
-                <div class="m-nav-burger" data-t-name="NavBurger">
-                    <span class="m-nav-burger__burger"></span>
-                </div>
-                <div id="a-sermenu" class="m-nav-service" data-t-name="NavService">
-                    <ul class="m-nav-service__list">
-                        <li class="m-nav-service__item m-nav-service__item--country-selector">
-                            <button class="m-overlay__link">
-                                <span class="m-overlay__link__text">شرکت فنی و مهندسی عمود سیر تبریز</span>
-                            </button>
-                            <div class="a-loader js-a-loader">
-                                <svg class="a-loader__icon a-loader__icon--inner" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 283.5">
-                                    <switch>
-                                        <g>
-                                            <g
-                                                class="a-loader__icon-circle-wrapper a-loader__icon-circle-wrapper--inner">
-                                                <path class="a-loader__icon-circle a-loader__icon-circle--secondary"
-                                                    d="M256.2,142.2c0-31.5-12.7-60-33.4-80.7c-20.7-20.7-49.2-33.4-80.7-33.4c-63.1,0-114.1,51-114.1,114.1
-										c0,31.5,12.8,60,33.5,80.6c4.1,4.1,8.6,7.9,13.4,11.3l7.1-10.4c-25-18.5-41.3-48.1-41.3-81.6c0-28,11.3-53.4,29.7-71.8
-										s43.8-29.7,71.8-29.7c56,0,101.5,45.4,101.5,101.5c0,33.5-16.3,63.1-41.3,81.6l7.1,10.4C237.8,213.4,256.2,180,256.2,142.2z">
-                                                </path>
-                                                <path class="a-loader__icon-circle a-loader__icon-circle--primary" d="M142.2,243.7c-22.6,0-43.3-7.5-60.2-19.9l-7.1,10.4c18.8,13.9,42.1,22.1,67.2,22.1
-										c25.2,0,48.4-8.3,67.3-22.1l-7.1-10.4C185.5,236.2,164.7,243.7,142.2,243.7z"></path>
-                                            </g>
-                                            <rect y="0" class="a-loader__bounding-box" width="283.5" height="283.5" />
-                                        </g>
-                                    </switch>
-                                </svg>
-                                <svg class="a-loader__icon a-loader__icon--outer" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 283.5">
-                                    <switch>
-                                        <g>
-                                            <g
-                                                class="a-loader__icon-circle-wrapper a-loader__icon-circle-wrapper--outer">
-                                                <path class="a-loader__icon-circle a-loader__icon-circle--secondary" d="M273.9,142.2c0-36.3-14.8-69.3-38.6-93.1s-56.8-38.6-93.1-38.6c-72.7,0-131.7,59-131.7,131.7
-										c0,36.3,14.8,69.3,38.6,93.1c4.9,4.9,10.3,9.3,15.9,13.4l3.6-5.2l3.5-5.1c-29.7-21.7-49-56.6-49-96.1c0-32.9,13.3-62.6,34.8-84.3
-										c21.6-21.5,51.3-34.8,84.3-34.8c65.8,0,119.1,53.3,119.1,119.1c0,39.5-19.3,74.5-49,96.1l3.5,5.1l3.6,5.3
-										C252.4,224.7,273.9,186,273.9,142.2z"></path>
-                                                <path class="a-loader__icon-circle a-loader__icon-circle--primary" d="M212.3,238.3c-19.7,14.4-43.9,23-70.1,23c-26.2,0-50.4-8.6-70.1-23l-3.5,5.1l-3.6,5.2
-										c21.7,15.8,48.4,25.2,77.2,25.2c28.9,0,55.5-9.4,77.2-25.2l-3.6-5.3L212.3,238.3z"></path>
-                                            </g>
-                                            <rect y="0" class="a-loader__bounding-box" width="283.5" height="283.5">
-                                            </rect>
-                                        </g>
-                                    </switch>
-                                </svg>
-                            </div>
-                            <div class="m-nav-service__ondemand-target js-m-nav-service__ondemand-target"
-                                data-async-endpoint="/content/us/internet/en/home.ajax-countryselector.html"
-                                data-trigger-id="ondemand-country-selector" data-target-overlay-id="country-selector">
-                            </div>
-                        </li>
-                        <li id="a-search" class="m-nav-service__item m-nav-service__item--search">
-
-
-                            <div class="m-overlay js-m-overlay  m-overlay--search" data-overlay-id="search"
-                                data-t-name="Overlay">
-                                <div class="m-overlay__scrolling-area js-m-overlay__scrolling-area">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                        </li>
-
-
-                    </ul>
-                </div>
-            </div>
-        </div>
         </div>
         <div id="a-mainmenu" class="h-layout__header-nav-main">
             <div class="m-nav-main" data-t-name="NavMain">
@@ -172,61 +114,55 @@
                         <ul>
                             <li class="m-nav-main__list-item">
 
-                                <a href="/" target="_self"
-                                    class="m-nav-main__list-link js-nav-main__list-link"><b>صفحه اصلی </b></a>
+                                <a href="/" target="_self" class="m-nav-main__list-link js-nav-main__list-link"><b>صفحه اصلی </b></a>
 
 
                             </li>
                             <li class="m-nav-main__list-item">
 
-                                <a  href="#" target="_self" class="m-nav-main__list-link js-nav-main__list-link"><b>
+                                <a href="#" target="_self" class="m-nav-main__list-link js-nav-main__list-link"><b>
                                         محصولات </b></a>
 
                                 <div class="m-nav-main__level-flyout js-nav-main__level-flyout">
-                                    <ul
-                                        class="m-nav-main__sub-level js-nav-main__hover-bind js-nav-main__sub-level state-m-nav-main--sublevel-active">
+                                    <ul class="m-nav-main__sub-level js-nav-main__hover-bind js-nav-main__sub-level state-m-nav-main--sublevel-active">
 
 
-                                        
+
                                         @foreach(App\Category::getRoot() as $cat)
 
                                         <?php $children = $cat->children; ?>
-                                        @if(count($children) > 0) 
+                                        @if(count($children) > 0)
                                         <li class="m-nav-main__sub-level__item js-nav-main__hover-bind  js-nav-main__sub-level__item">
-                                            <a class="m-nav-main__sub-level__link js-nav-main__hover-bind  state-m-nav-main--has-children js-nav-main__sub-level__link"
-                                                target="_self" href="#">{{ $cat->name }}
+                                            <a class="m-nav-main__sub-level__link js-nav-main__hover-bind  state-m-nav-main--has-children js-nav-main__sub-level__link" target="_self" href="#">{{ $cat->name }}
                                             </a>
                                             <ul class="m-nav-main__sub-level js-nav-main__hover-bind js-nav-main__sub-level">
                                                 @foreach($children as $child)
 
                                                 <li class="m-nav-main__sub-level__item  js-nav-main__hover-bind ">
-                                                    <a href="/categories/{{ $child->slug }}" target="_self"
-                                                        class="m-nav-main__sub-level__link js-nav-main__hover-bind ">
+                                                    <a href="/categories/{{ $child->slug }}" target="_self" class="m-nav-main__sub-level__link js-nav-main__hover-bind ">
                                                         {{ $child->name }}</a>
 
                                                 </li>
-                                               @endforeach
+                                                @endforeach
                                             </ul>
                                         </li>
 
                                         @else
                                         <li class="m-nav-main__sub-level__item js-nav-main__hover-bind ">
-                                            <a class="m-nav-main__sub-level__link js-nav-main__hover-bind "
-                                                target="_self" href="/categories/{{ $cat->slug }}">{{ $cat->name }}</a>
+                                            <a class="m-nav-main__sub-level__link js-nav-main__hover-bind " target="_self" href="/categories/{{ $cat->slug }}">{{ $cat->name }}</a>
 
                                         </li>
                                         @endif
-                                        
+
                                         @endforeach
-                                        
+
                                     </ul>
                                     <div class="js-nav-main__spacer"></div>
                                     <div class="js-nav-main__outer-overlay m-nav-main__outer-overlay">
                                         <div class="m-nav-main__shadow"></div>
                                     </div>
                                     <div class="m-nav-main__close-button-container">
-                                        <a href="javascript:;"
-                                            class="m-nav-main__close-button js-m-nav-main__close-button"></a>
+                                        <a href="javascript:;" class="m-nav-main__close-button js-m-nav-main__close-button"></a>
                                     </div>
                                 </div>
                             </li>
@@ -253,8 +189,7 @@
                             </li>
                             <li class="m-nav-main__list-item" style="margin-right: 40px;">
 
-                                <a href="#bottom" target="_self"
-                                    class="m-nav-main__list-link js-nav-main__list-link"><b>ارتباط با ما </b></a>
+                                <a href="#bottom" target="_self" class="m-nav-main__list-link js-nav-main__list-link"><b>ارتباط با ما </b></a>
 
 
                             </li>
@@ -275,27 +210,107 @@
 
                 <div class="m-nav-off__card-wrapper js-m-nav-off__card-wrapper"></div>
 
-                <script class="js-nav-off__json"
-                    type="application/json">{"linkTitle":"root","isService":false,"activePage":false,"childElements":[{"linkTitle":"صفحه اصلی","linkHref":"/","isService":false,"activePage":false,"targetAttribute":"_self"},{"linkTitle":"محصولات","linkHref":"#","isService":false,"activePage":false,"targetAttribute":"_self","childElements":[{"linkTitle":"محصولات","linkHref":"#","isService":false,"activePage":false,"targetAttribute":"_self"},{"linkTitle":"کابین","linkHref":"#","isService":false,"activePage":false,"targetAttribute":"_self","childElements":[{"linkTitle":" کابین","linkHref":"#","isService":false,"activePage":false,"targetAttribute":"_self"},{"linkTitle":"کابین تمام استیل","linkHref":"/products/steel-cabin","isService":false,"activePage":true,"targetAttribute":"_self"},{"linkTitle":"کابین ام دی اف استیل","linkHref":"/products/mdf","isService":false,"activePage":true,"targetAttribute":"_self"},{"linkTitle":"کابین های گلاس استیل","linkHref":"/products/higlass","isService":false,"activePage":true,"targetAttribute":"_self"},{"linkTitle":"کابین سنگ مصنوعی ","linkHref":"/products/stone","isService":false,"activePage":true,"targetAttribute":"_self"}]},{"linkTitle":"کارسلینگ","linkHref":"/products/carsling","isService":false,"activePage":false,"targetAttribute":"_self"},{"linkTitle":"پایه موتور","linkHref":"/products/motor-stand","isService":false,"activePage":false,"targetAttribute":"_self"},{"linkTitle":"سایر محصولات ","linkHref":"/products/other","isService":false,"activePage":false,"targetAttribute":"_self"}]},{"linkTitle":"گالری تصاویر","linkHref":"/gallery","isService":false,"activePage":false,"targetAttribute":"_self"},{"linkTitle":"با عمودسیر بیشتر آشنا شوید","linkHref":"/about","isService":false,"activePage":false,"targetAttribute":"_self"},{"linkTitle":"پروژه های اجرا شده","linkHref":"/project","isService":false,"activePage":false,"targetAttribute":"_self"},{"linkTitle":"ارتباط با ما","linkHref":"#bottom","isService":false,"activePage":false,"targetAttribute":"_self"}]}</script>
+                <script class="js-nav-off__json" type="application/json">
+                    {
+                        "linkTitle": "root",
+                        "isService": false,
+                        "activePage": false,
+                        "childElements": [{
+                                "linkTitle": "صفحه اصلی",
+                                "linkHref": "/",
+                                "isService": false,
+                                "activePage": false,
+                                "targetAttribute": "_self"
+                            },
+                            {
+                                "linkTitle": "محصولات",
+                                "linkHref": "#",
+                                "isService": false,
+                                "activePage": false,
+                                "targetAttribute": "_self",
+                                "childElements": [
 
-                <div class="m-nav-off__card js-nav-off__card m-nav-off__card--country-selector js-m-nav-off__card--async"
-                    id="m-nav-off__country-selector-wrapper"
-                    data-async-endpoint="#">
+                                    @foreach(App\ Category::getRoot() as $cat)
+
+                                    <?php $children = $cat->children; ?>
+                                    @if(count($children) > 0) {
+                                        "linkTitle": "{{ $cat->name }}",
+                                        "linkHref": "/categories/{{ $cat->slug }}",
+                                        "isService": false,
+                                        "activePage": false,
+                                        "targetAttribute": "_self",
+                                        "childElements": [
+                                            @foreach($children as $child) {
+                                                "linkTitle": "{{ $child->name }}",
+                                                "linkHref": "/categories/{{ $child->slug }}",
+                                                "isService": false,
+                                                "activePage": false,
+                                                "targetAttribute": "_self"
+                                            }
+
+                                            @if(!$loop->last),
+                                            @endif
+                                            @endforeach
+                                        ]
+                                    }
+                                    @else {
+                                        "linkTitle": "{{ $cat->name }}",
+                                        "linkHref": "/categories/{{ $cat->slug }}",
+                                        "isService": false,
+                                        "activePage": false,
+                                        "targetAttribute": "_self"
+                                    }
+                                    @if(!$loop->last),
+                                    @endif
+                                    @endif
+                                    @endforeach
+                                ]
+                            },
+                            {
+                                "linkTitle": "گالری تصاویر",
+                                "linkHref": "/gallery",
+                                "isService": false,
+                                "activePage": false,
+                                "targetAttribute": "_self"
+                            },
+                            {
+                                "linkTitle": "با عمودسیر بیشتر آشنا شوید",
+                                "linkHref": "/about",
+                                "isService": false,
+                                "activePage": false,
+                                "targetAttribute": "_self"
+                            },
+                            {
+                                "linkTitle": "پروژه های اجرا شده",
+                                "linkHref": "/project",
+                                "isService": false,
+                                "activePage": false,
+                                "targetAttribute": "_self"
+                            },
+                            {
+                                "linkTitle": "ارتباط با ما",
+                                "linkHref": "#bottom",
+                                "isService": false,
+                                "activePage": false,
+                                "targetAttribute": "_self"
+                            }
+                        ]
+                    }
+                </script>
+
+                <div class="m-nav-off__card js-nav-off__card m-nav-off__card--country-selector js-m-nav-off__card--async" id="m-nav-off__country-selector-wrapper" data-async-endpoint="#">
                     <div class="m-nav-off__card-list-wrapper">
                         <div class="m-nav-off__card-button-wrapper">
-                            <a class="a-button js-a-button a-button--secondary" data-t-name="Button"
-                                data-hover="amoudseir  Website" href="https://www.amoudseir.com " target="_blank">
+                            <a class="a-button js-a-button a-button--secondary" data-t-name="Button" data-hover="amoudseir  Website" href="https://www.amoudseir.com " target="_blank">
                                 <span class="a-button__label">شرکت فنی و مهندسی عمودسیر </span>
                             </a>
                         </div>
                         <div class="a-loader js-a-loader">
-                            <svg class="a-loader__icon a-loader__icon--inner" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 283.5">
+                            <svg class="a-loader__icon a-loader__icon--inner" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 283.5">
                                 <switch>
                                     <g>
                                         <g class="a-loader__icon-circle-wrapper a-loader__icon-circle-wrapper--inner">
-                                            <path class="a-loader__icon-circle a-loader__icon-circle--secondary"
-                                                d="M256.2,142.2c0-31.5-12.7-60-33.4-80.7c-20.7-20.7-49.2-33.4-80.7-33.4c-63.1,0-114.1,51-114.1,114.1
+                                            <path class="a-loader__icon-circle a-loader__icon-circle--secondary" d="M256.2,142.2c0-31.5-12.7-60-33.4-80.7c-20.7-20.7-49.2-33.4-80.7-33.4c-63.1,0-114.1,51-114.1,114.1
 										c0,31.5,12.8,60,33.5,80.6c4.1,4.1,8.6,7.9,13.4,11.3l7.1-10.4c-25-18.5-41.3-48.1-41.3-81.6c0-28,11.3-53.4,29.7-71.8
 										s43.8-29.7,71.8-29.7c56,0,101.5,45.4,101.5,101.5c0,33.5-16.3,63.1-41.3,81.6l7.1,10.4C237.8,213.4,256.2,180,256.2,142.2z"></path>
                                             <path class="a-loader__icon-circle a-loader__icon-circle--primary" d="M142.2,243.7c-22.6,0-43.3-7.5-60.2-19.9l-7.1,10.4c18.8,13.9,42.1,22.1,67.2,22.1
@@ -305,8 +320,7 @@
                                     </g>
                                 </switch>
                             </svg>
-                            <svg class="a-loader__icon a-loader__icon--outer" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 283.5">
+                            <svg class="a-loader__icon a-loader__icon--outer" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 283.5">
                                 <switch>
                                     <g>
                                         <g class="a-loader__icon-circle-wrapper a-loader__icon-circle-wrapper--outer">
@@ -327,7 +341,7 @@
                 </div>
             </div>
             <script class="tpl-nav-off__card" type="text/x-dot-template">
-            <div class="m-nav-off__card js-nav-off__card">
+                <div class="m-nav-off__card js-nav-off__card">
                 <div class="m-nav-off__card-list-wrapper">
                     <ul class="m-nav-off__card-list js-nav-off__card-list">
                         <@ _.each(collection, function(link, index) { @>
@@ -346,47 +360,65 @@
         </div>
     </div>
     @yield('content')
-    
+
     <section id="bottom">
         <div class="h-layout__outer--white h-layout--footer">
             <div class="container">
                 <div class="h-layout__inner">
+                    <br>
                     <div class="row">
-                        <div class="col-lg-9">
-                            <div class="m-footer-address" data-t-name="FooterAddress">
-                                <h2>شرکت فنی و مهندسی عمودسیر تبریز</h2>
-                                <div class="m-footer-address__info">
-                                    <div class="a-richtext a-richtext--footer" data-t-name="Richtext">
-                                        <p style="padding-right:50px;">آدرس دفتر : تبریز - ولیعصر - خیابان رودکی - جنب
-                                            کلینیک پوست و موی ایرانیان - طبقه اول </br>
-                                            تلفن: <a  href="tel:+984133326520">04133326520 </a><br>
-                                            <br>
-                                            آدرس فروشگاه : تبریز - ولیعصر جنوبی - خیابان سعدی - <br>
-                                            تلفن: <a href="tel:+984133325048">04133325048</a>
-                                            <br>
-                                            <br>
-                                            آدرس کارگاه : تبریز - سه راهی اهر - کوچه ایلیار - <br>
-                                            تلفن: <a href="tel:+984136373142">04136373142</a></p>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="address_box">
+
+                                <div class="address">
+                                <strong>
+                                    آدرس دفتر
+                                </strong>
+                               <span> تبریز - ولیعصر - خیابان رودکی - جنب کلینیک پوست و موی ایرانیان - طبقه اول
+                        </span>
+                                </div>
+                                <div class="phone">
+                                <img src="/img/phone.svg" class="icon"  />
+                                    <span>04133326520</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="address_box">
+
+                                <div class="address">
+                                <strong>
+                                آدرس فروشگاه
+                                </strong>
+                               <span>تبریز - ولیعصر جنوبی - خیابان سعدی</span>
+                                </div>
+                                <div class="phone">
+                                <img src="/img/phone.svg" class="icon"  />
+                                    <span>04133325048</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="address_box">
+
+                                <div class="address">
+                                <strong>
+                                آدرس کارگاه : تبریز
+                                </strong>
+                               <span>تبریز - سه راهی اهر - کوچه ایلیار</span>
+                                </div>
+                                <div class="phone">
+                                <img src="/img/phone.svg" class="icon"  />
+                                    <span>04136373142</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12"
-                            style="text-align: center; display: flex; justify-content: center; align-items: center;">
-                            <a style="text-decoration:none" href="">
-                                <p style="  font-size: 20px;color:rgb(169, 111, 245)"> amoudseir@</p>
-                            </a>
-                            <img src="/img/insta.png" style="width: 50px; height: 50px;" />
-                            <a style="text-decoration:none" href="">
-                                <p style="  font-size: 20px; padding-right: 20px;color:rgb(88, 186, 211)"> amoud_seir_co@ </p>
-                            </a>
-                            <img src="/img/telegram.png" style="width: 40px; height: 40px;" />
-                        </div>
-                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     </div>
@@ -399,10 +431,11 @@
         var siteCatalystAccount = "schindlersec,schindlerglobal";
     </script>
     <script type="text/javascript" src="/etc/clientlibs/schindler/s_code.min.js"></script>
-    <script type="text/javascript" class="">< !--
-            /* You may give each page an identifying name, server, and channel on
-            the next lines. */
-            s.pageName="us:internet:en:home"
+    <script type="text/javascript" class="">
+        < !--
+        /* You may give each page an identifying name, server, and channel on
+        the next lines. */
+        s.pageName = "us:internet:en:home"
         s.server = "www.schindler.com"
         s.channel = "Homepage"
         s.pageType = ""
@@ -432,12 +465,16 @@
         s.eVar7=s.prop20
         */
         /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-        var s_code = s.t(); if (s_code) document.write(s_code)//--></script>
-    <script type="text/javascript" class="">< !--
-    if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
-    //--></script><noscript><img src="http://schindler.d3.sc.omtrdc.net/b/ss/schindlersec/1/H.24.4--NS/0" height="1"
-            width="1" alt="" /></noscript>
+        var s_code = s.t();
+        if (s_code) document.write(s_code) //-->
+    </script>
+    <script type="text/javascript" class="">
+        < !--
+        if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+        //-->
+    </script><noscript><img src="http://schindler.d3.sc.omtrdc.net/b/ss/schindlersec/1/H.24.4--NS/0" height="1" width="1" alt="" /></noscript>
     <!--/DO NOT REMOVE/-->
     <!-- End SiteCatalyst code version: H.24.4. -->
 </body>
+
 </html>
